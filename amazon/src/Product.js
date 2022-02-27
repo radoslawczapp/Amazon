@@ -2,23 +2,24 @@ import React from "react";
 import "./Product.css";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
-function Product() {
+function Product({ id, title, image, price, rating }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>The lean startup</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          <p>⭐</p>
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>&#11088;</p>
+            ))}
         </div>
       </div>
-      <img
-        src="https://ecsmedia.pl/c/no-rules-rules-w-iext97382645.jpg"
-        alt="Photo"
-      />
+      <img src={image} alt="" />
       <button>
         <AddShoppingCartIcon />
       </button>
