@@ -23,7 +23,7 @@ function Home() {
             id="655123416"
             title="Atlas of the Heart: Mapping Meaningful Connection and the Language of Human Experience"
             price={19.99}
-            image="https://m.media-amazon.com/images/I/51VdqxvlDqL.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/91DNhLLmUOL.jpg"
             rating={2}
           />
         </div>
