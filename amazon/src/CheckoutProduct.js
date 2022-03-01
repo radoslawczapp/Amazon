@@ -1,6 +1,6 @@
 import React from "react";
 import "./CheckoutProduct.css";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
 import { useStateValue } from "./StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating }) {
@@ -28,7 +28,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
             ))}
         </div>
         <button onClick={removeFromBasket}>
-          <DeleteForeverIcon />
+          <DeleteForeverOutlinedIcon />
         </button>
       </div>
     </div>
